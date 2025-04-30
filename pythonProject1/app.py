@@ -39,6 +39,14 @@ if uploaded_file is not None:
             st.header("Links Shared")
             st.title(num_links)
 
+
+
+
+
+
+
+
+
         # Monthly timeline
         st.title("Monthly Timeline")
         timeline = helper.monthly_timeline(selected_user, df)
@@ -124,6 +132,7 @@ if uploaded_file is not None:
             fig, ax = plt.subplots()
             ax.pie(emoji_df[1].head(), labels=emoji_df[0].head(), autopct="%0.2f%%")
             st.pyplot(fig)
+
 
 
 
